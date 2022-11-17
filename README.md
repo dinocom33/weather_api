@@ -4,6 +4,8 @@ In order to use it, you will need to register in https://home.openweathermap.org
 The response to the request is returned as a Jason file. All details about it can be found at the following link:
 https://openweathermap.org/current
 
+My idea is that this script, with some improvements and additions, will become an addon for Home Assistant.
+
 Below you can see some screenshots of the script execution.
 
 ![image](https://user-images.githubusercontent.com/59865649/202232030-bba87246-af29-4620-9ff6-cc509d4598d6.png)

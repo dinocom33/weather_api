@@ -1,7 +1,8 @@
 import requests
 
-API_KEY = "put_your_API_KEY_here"
-BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
+f = open("api.txt", "r")
+API_KEY = f.read()
+BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 city_name = input("Enter a city name: ")
 request_url = f"{BASE_URL}?appid={API_KEY}&q={city_name}&units=metric&lang=bg"
@@ -21,7 +22,7 @@ if get_response.status_code == 200:  # this code means that the request is succe
 
     print(f"City: {city}")
     print(f"Weather: {weather}")
-    print(f"Temperature: {temperature} °C")  # you can use chr(176) to display the celsius symbol
+    print(f"Temperature: {temperature} °C")  # you can use chr(176) to display the Celsius symbol
     print(f"Feels like: {feels_like} °C")
     # print(f"Minimal temp.: {min_temp} °C")
     # print(f"Maximum temp.: {max_temp} °C")

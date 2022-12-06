@@ -1,5 +1,5 @@
 # Weather API
-This simple script makes a request to https://home.openweathermap.org/ and displays the current time, temperature, humidity and wind speed for the city set by the user.
+This simple script makes a request to https://home.openweathermap.org/ and displays the current weather, temperature(+ feels like), humidity and wind speed for the city set by the user.
 In order to use it, you will need to register in https://home.openweathermap.org/users/sign_in, which is free (no credit card required), to generate an API key that you need to put in the script. You also need to install Python module "requests"(pip install requests) to be able to send requests to this API.
 The response to the request is returned as a Jason file. All details about it can be found at the following link:
 https://openweathermap.org/current

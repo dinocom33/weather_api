@@ -8,7 +8,7 @@ city_name = input("Enter a city name: ")
 request_url = f"{BASE_URL}?appid={API_KEY}&q={city_name}&units=metric&lang=bg"
 get_response = requests.get(request_url)
 
-if get_response.status_code == 200:    # this code(200) means that the request is successful, and we have a valid answer
+if get_response.status_code == 200:   # this code(200) means that the request is successful, and we have a valid answer
     received_data = get_response.json()
     weather = received_data["weather"][0]["description"]
     temperature = received_data["main"]["temp"]

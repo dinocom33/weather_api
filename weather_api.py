@@ -3,6 +3,7 @@ import requests
 f = open("api.txt", "r")
 API_KEY = f.read()
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
+f.close()
 
 city_name = input("Enter a city name: ")
 request_url = f"{BASE_URL}?appid={API_KEY}&q={city_name}&units=metric&lang=bg"
